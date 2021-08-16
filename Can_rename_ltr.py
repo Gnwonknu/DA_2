@@ -21,4 +21,3 @@ for x in h.headers:
     print("\t", x, ":", h.headers[x])
 print("*******************************")
 
-hello world
