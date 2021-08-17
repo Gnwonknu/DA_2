@@ -48,3 +48,5 @@ class Can_rename_ltr(unittest.TestCase):
         print("Testing")
     if __name__=='__main__':
        unittest.main()
+
+print("hello world")
