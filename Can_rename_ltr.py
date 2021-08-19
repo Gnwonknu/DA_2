@@ -30,7 +30,7 @@ class NewSpider(scrapy.Spider):
         for x in response.css(css_selector):
             newsel = '@src'
             yield{
-                'image LInk': x.xpath(newsel).extract_first()
+                'image Link': x.xpath(newsel).extract_first()
             }
         Page_selector = '.next a::attr(href)'
         next_page = response.css(Page_selector).extract_first()
