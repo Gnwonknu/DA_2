@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://54.169.8.122/Python/172.18.58.238/varsity/index.html'
+url = 'https://brickset.com/sets/year-1999'
 r = requests.get(url)
 print(r.text)
 
@@ -24,7 +24,7 @@ import scrapy
 
 class NewSpider(scrapy.Spider):
     name = "new_spider"
-    start_urls = ["http://54.169.8.122/Python/172.18.58.238/varsity/index.html"]
+    start_urls = ["https://brickset.com/sets/year-1999"]
     def parse(self, response):
         css_selector = 'img'
         for x in response.css(css_selector):
