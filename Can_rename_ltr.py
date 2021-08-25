@@ -5,13 +5,13 @@ r = requests.get(url)
 print(r.text)
 
 print("Status code:") #get status code
-print("/t*", r.status_code)
+print(r.status_code)
 
 h = requests.head(url)
 print("Header:")
 
 for x in h.headers:
-    print("/t", x, ":", h.headers[x])
+    print(x, ":", h.headers[x])
 
 headers = {
     'User-Agent': 'Mobile'
