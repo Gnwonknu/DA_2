@@ -1,4 +1,6 @@
 import requests
+import scrapy
+import unittest
 
 url = 'https://brickset.com/sets/year-1999'
 r = requests.get(url)
@@ -20,7 +22,6 @@ headers = {
 rh = requests.get(url, headers=headers)
 print(rh.request.headers)
 
-import scrapy
 
 class NewSpider(scrapy.Spider):
     name = "new_spider"
@@ -40,8 +41,6 @@ class NewSpider(scrapy.Spider):
                 callback=self.parse
             )
             
-import requests
-import unittest
 import Can_rename_ltr as prog
 
 url = 'https://brickset.com/sets/year-1999'
