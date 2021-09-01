@@ -46,7 +46,6 @@ class NewSpider(scrapy.Spider):
                 callback=self.parse
             )
             
-import Can_rename_ltr as prog
 # Selects url
 url = 'https://brickset.com/sets/year-1999'
 # Perform "get" request
