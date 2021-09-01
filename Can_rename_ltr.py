@@ -53,7 +53,7 @@ url = 'https://brickset.com/sets/year-1999'
 r = requests.get(url)
 # Create a unit test
 class Hello(unittest.TestCase):
-    # Test if teh status code returns "OK/200"
+    # Test if the status code returns "OK/200"
     def test_login_requests(self):
         self.assertEqual(r.status_code, 200)
 
